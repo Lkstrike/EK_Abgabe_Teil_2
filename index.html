@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-nav">
+        <div class="login-dropdown">
+            <a href="#">Anmelden</a>
+            <div class="login-content">
+                <form>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Bitte Geben sie ihre E-Mail ein" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Bitte geben sie ihr Passwort ein" required>
+                    <button type="submit">Login</button>
+                    <a href="#" class="register">Register</a>
+                </form>
+            </div>
+        </div>
+        <div class="more-dropdown">
+            <a href="#">Mehr</a>
+            <div class="more-content">
+                <a href="gmail.html" target="_blank">Gmail</a>
+                <a href="bilder.html" target="_blank">Bilder</a>
+                <a href="kalender.html" target="_blank">Kalender</a>
+                <a href="about.html" target="_blank">Über uns</a>
+                <a href="terms.html" target="_blank">Terms</a>
+            
+            </div>
+        </div>
+    </div>
+    <div class="logo">
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </div>
+    <p class="description"></p>
+    <form class="search-box" action="https://www.google.de/search" method="get">
+        <input type="text" name="q" placeholder="Suchen sie was sie wollen" required>
+        <div class="buttons">
+            <button type="submit">Google Search</button>
+            <button type="button" onclick="clearAndSubmit()">I'm Feeling Lucky</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
